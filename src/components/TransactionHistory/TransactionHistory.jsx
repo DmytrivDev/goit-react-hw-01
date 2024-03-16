@@ -13,7 +13,17 @@ function TransactionHistory({ items }) {
         </tr>
       </thead>
       <tbody>
-        <TransactionItem items={items} />
+        {items.map((item) => {
+          const { id, type, amount, currency } = item;
+          return (
+            <TransactionItem
+              key={id}
+              type={type}
+              amount={amount}
+              currency={currency}
+            />
+          );
+        })}
       </tbody>
     </table>
   );

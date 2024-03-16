@@ -1,19 +1,12 @@
 import css from "./TransactionItem.module.scss";
 
-function TransactionItem({ items }) {
+function TransactionItem({ id, type, amount, currency }) {
   return (
-    <>
-      {items.map((item) => {
-        const { id, type, amount, currency } = item;
-        return (
-          <tr key={id}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
-          </tr>
-        );
-      })}
-    </>
+    <tr id={id}>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </tr>
   );
 }
 
