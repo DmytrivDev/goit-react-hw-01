@@ -1,0 +1,28 @@
+.tabls {
+    max-width: 30em;
+    width: 100%;
+    border-collapse: collapse;
+
+    * {
+        text-align: center;
+        padding: .25em;
+    }
+
+    td {
+        border: 1px solid #000;
+    }
+
+    thead {
+        background-color: #000;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: #e0dddd;
+            }
+        }
+    }
+}
