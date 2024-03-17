@@ -1,6 +1,6 @@
 import FriendListItem from "./FriendListItem/FriendListItem";
 
-import css from "./Friends.module.scss";
+import css from "./FriendList.module.scss";
 
 function Friends({friends}) {
   

@@ -1,5 +1,5 @@
 import Profile from "./Profile/Profile";
-import Friends from "./Friends/Friends";
+import FriendList from "./FriendList/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory";
 
 import "./App.scss";
@@ -17,7 +17,7 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <Friends friends={friends} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </>
   );
