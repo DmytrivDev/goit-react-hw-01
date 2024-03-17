@@ -10,6 +10,7 @@ function FriendListItem({itemId, avatar, name, isOnline}) {
       <span
         className={clsx({
           [css.online]: isOnline,
+          [css.ofline]: !isOnline,
         })}
       >
         {isOnline ? "Online" : "Ofline"}
